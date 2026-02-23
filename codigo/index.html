@@ -1,1 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Administrador - ACME S.A.S.</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>ACME S.A.S.</h2>
+      <img src="../img/logo.png" alt="Logo ACME" class="logo-sidebar">
+      <nav>
+        <ul>
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="inventario.html">Inventario</a></li>
+          <li><a href="ordenes.html">Órdenes</a></li>
+          <li><a href="contactos.html">Contactos</a></li>
+          <li><a href="reportes.html">Reportes</a></li>
+          <li><a href="entradas.html">Entradas</a></li>
+          <li><a href="salidas.html">Salidas</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main content -->
+    <div class="main">
+      <h1>Dashboard Administrador</h1>
+
+      <!-- Tarjetas de resumen -->
+<div class="cards">
+  <div class="card">
+    <img src="../img/productos-icon.png" alt="Productos" class="icon-card">
+    <p>Total Productos: 120</p>
+  </div>
+  <div class="card">
+    <img src="../img/clientes-icon.png" alt="Clientes" class="icon-card">
+    <p>Clientes Registrados: 35</p>
+  </div>
+  <div class="card">
+    <img src="../img/proveedores-icon.png" alt="Proveedores" class="icon-card">
+    <p>Proveedores Activos: 12</p>
+  </div>
+  <div class="card">
+    <img src="../img/categoriass-icon.png" alt="Categorías" class="icon-card">
+    <p>Categorías: 8</p>
+  </div>
+</div>
+
+      <!-- Acciones rápidas -->
+<div class="actions">
+  <a href="producto.html" class="btn">
+    <img src="../img/nuevo-producto.png" alt="Nuevo Producto" class="icon-btn">
+    Nuevo Producto
+  </a>
+
+  <a href="orden-form.html" class="btn">
+    <img src="../img/nueva-orden.png" alt="Nueva Orden" class="icon-btn">
+    Nueva Orden
+  </a>
+
+  <a href="orden-form.html" class="btn">
+    <img src="../img/nueva-cotizacion.png" alt="Nueva Cotización" class="icon-btn">
+    Nueva Cotización
+  </a>
+
+  <a href="entradas.html" class="btn">
+    <img src="../img/entrada.png" alt="Registrar Entrada" class="icon-btn">
+    Registrar Entrada
+  </a>
+
+  <a href="reportes.html" class="btn">
+    <img src="../img/reportes.png" alt="Ver Reportes" class="icon-btn">
+    Ver Reportes
+  </a>
+</div>
+
+      <!-- Tabla de alertas -->
+      <h2>Alertas de Stock Bajo</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Producto</th>
+            <th>Stock Actual</th>
+            <th>Stock Min</th>
+            <th>Stock Máx</th>
+            <th>Consumo Promedio</th>
+            <th>Observaciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>P-001</td>
+            <td>Cajas de cartón</td>
+            <td>82</td>
+            <td>80</td>
+            <td>200</td>
+            <td>60</td>
+            <td>120</td>
+          </tr>
+          <tr>
+            <td>P-002</td>
+            <td>Botella de vino</td>
+            <td>153</td>
+            <td>150</td>
+            <td>500</td>
+            <td>80</td>
+            <td>380</td>
+          </tr>
+          <tr>
+            <td>P-003</td>
+            <td>Etiquetas</td>
+            <td>2010</td>
+            <td>2000</td>
+            <td>5000</td>
+            <td>2500</td>
+            <td>5500</td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="inventario.html" class="btn">Ver Todo</a>
+    </div>
+  </div>
+</body>
+</html>
 
