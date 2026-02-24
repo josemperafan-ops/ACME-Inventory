@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventario - Administrador</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>ACME S.A.S.</h2>
+      <img src="../img/logo.png" alt="Logo ACME" class="logo-sidebar">
+      <nav>
+        <ul>
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="inventario.html">Inventario</a></li>
+          <li><a href="ordenes.html">Órdenes</a></li>
+          <li><a href="contactos.html">Contactos</a></li>
+          <li><a href="reportes.html">Reportes</a></li>
+          <li><a href="entradas.html">Entradas</a></li>
+          <li><a href="salidas.html">Salidas</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main content -->
+    <div class="main">
+      <h1>Gestión de Inventario (Administrador)</h1>
+
+      <!-- Botón agregar producto -->
+      <a href="producto.html" class="btn">Agregar Producto</a>
+
+      <!-- Tabla de inventario -->
+      <table>
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Producto</th>
+            <th>Stock Actual</th>
+            <th>Stock Min</th>
+            <th>Stock Máx</th>
+            <th>Consumo Promedio</th>
+            <th>Ubicación</th>
+            <th>$ Entrada</th>
+            <th>$ Salida</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>P-001</td>
+            <td>Cajas de cartón</td>
+            <td>120</td>
+            <td>80</td>
+            <td>200</td>
+            <td>60</td>
+            <td>Bodega</td>
+            <td>$1000</td>
+            <td>$1500</td>
+            <td>
+              <a href="producto.html" class="btn">Editar</a>
+              <a href="#" class="btn">Eliminar</a>
+            </td>
+          </tr>
+          <tr>
+            <td>P-002</td>
+            <td>Botella de vino</td>
+            <td>153</td>
+            <td>150</td>
+            <td>300</td>
+            <td>180</td>
+            <td>Almacén</td>
+            <td>$2000</td>
+            <td>$3500</td>
+            <td>
+              <a href="producto.html" class="btn">Editar</a>
+              <a href="#" class="btn">Eliminar</a>
+            </td>
+          </tr>
+          <tr>
+            <td>P-003</td>
+            <td>Etiquetas</td>
+            <td>2010</td>
+            <td>2000</td>
+            <td>8000</td>
+            <td>2500</td>
+            <td>Bodega</td>
+            <td>$500</td>
+            <td>$800</td>
+            <td>
+              <a href="producto.html" class="btn">Editar</a>
+              <a href="#" class="btn">Eliminar</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
