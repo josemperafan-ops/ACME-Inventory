@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Órdenes y Cotizaciones - Administrador</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>ACME S.A.S.</h2>
+      <img src="../img/logo.png" alt="Logo ACME" class="logo-sidebar">
+      <nav>
+        <ul>
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="inventario.html">Inventario</a></li>
+          <li><a href="ordenes.html">Órdenes</a></li>
+          <li><a href="contactos.html">Contactos</a></li>
+          <li><a href="reportes.html">Reportes</a></li>
+          <li><a href="entradas.html">Entradas</a></li>
+          <li><a href="salidas.html">Salidas</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main content -->
+    <div class="main">
+      <h1>Órdenes y Cotizaciones</h1>
+
+      <!-- Botón nueva orden/cotización -->
+      <a href="orden-form.html" class="btn">Nueva Orden / Cotización</a>
+
+      <!-- Tabla de órdenes -->
+      <table>
+        <thead>
+          <tr>
+            <th>ID Orden</th>
+            <th>Cliente</th>
+            <th>Fecha</th>
+            <th>Estado</th>
+            <th>Total</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ORD-001</td>
+            <td>Juan Pérez</td>
+            <td>15/02/2026</td>
+            <td>Terminada</td>
+            <td>$45,000</td>
+            <td>
+              <a href="orden-form.html" class="btn">Ver</a>
+              <a href="#" class="btn">Eliminar</a>
+            </td>
+          </tr>
+          <tr>
+            <td>ORD-002</td>
+            <td>Constructora ABC</td>
+            <td>16/02/2026</td>
+            <td>En Proceso</td>
+            <td>$120,000</td>
+            <td>
+              <a href="orden-form.html" class="btn">Ver</a>
+              <a href="#" class="btn">Eliminar</a>
+            </td>
+          </tr>
+          <tr>
+            <td>ORD-003</td>
+            <td>Taller Mecánico</td>
+            <td>18/02/2026</td>
+            <td>Terminada</td>
+            <td>$75,000</td>
+            <td>
+              <a href="orden-form.html" class="btn">Ver</a>
+              <a href="#" class="btn">Eliminar</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
