@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscar Producto - Vista Operador</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>ACME S.A.S.</h2>
+      <nav>
+        <ul>
+          <li><a href="operador-dashboard.html">Dashboard</a></li>
+          <li><a href="operador-inventario.html">Inventario</a></li>
+          <li><a href="operador-orden-form.html">Órdenes / Cotizaciones</a></li>
+          <li><a href="operador-contactos.html">Contactos</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main content -->
+    <div class="main">
+      <h1>Buscar Producto</h1>
+
+      <!-- Formulario de búsqueda -->
+      <form action="ver-producto.html" method="get">
+        <label for="codigo">Ingrese Código del Producto</label>
+        <input type="text" id="codigo" name="codigo" placeholder="Ej: P-001" required>
+        <button type="submit">Buscar</button>
+      </form>
+
+      <!-- Nota -->
+      <p>El sistema mostrará la ficha del producto si el código existe en el inventario.</p>
+
+      <!-- Botón volver -->
+      <a href="operador-dashboard.html" class="btn">Volver al Dashboard</a>
+    </div>
+  </div>
+</body>
+</html>

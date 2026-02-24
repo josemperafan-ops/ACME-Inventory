@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Operador - ACME S.A.S.</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>ACME S.A.S.</h2>
+      <nav>
+        <ul>
+          <li><a href="operador-dashboard.html">Dashboard</a></li>
+          <li><a href="operador-inventario.html">Inventario</a></li>
+          <li><a href="operador-orden-form.html">Órdenes / Cotizaciones</a></li>
+          <li><a href="operador-contactos.html">Contactos</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main content -->
+    <div class="main">
+      <h1>Dashboard Operador</h1>
+
+      <!-- Tarjetas de resumen -->
+      <div class="cards">
+        <div class="card">Total Productos: 120</div>
+        <div class="card">Clientes Registrados: 35</div>
+        <div class="card">Proveedores Activos: 12</div>
+        <div class="card">Categorías: 8</div>
+      </div>
+
+      <!-- Acciones rápidas -->
+      <div class="actions">
+        <a href="operador-orden-form.html" class="btn">Nueva Cotización</a>
+        <a href="operador-orden-form.html" class="btn">Nueva Orden</a>
+      </div>
+
+      <!-- Tabla de alertas -->
+      <h2>Alertas de Stock Bajo</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Producto</th>
+            <th>Stock Actual</th>
+            <th>Stock Min</th>
+            <th>Stock Máx</th>
+            <th>Consumo Promedio</th>
+            <th>Observaciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>P-001</td>
+            <td>Cajas de cartón</td>
+            <td>82</td>
+            <td>80</td>
+            <td>200</td>
+            <td>60</td>
+            <td>120</td>
+          </tr>
+          <tr>
+            <td>P-002</td>
+            <td>Botella de vino</td>
+            <td>153</td>
+            <td>150</td>
+            <td>300</td>
+            <td>180</td>
+            <td>200</td>
+          </tr>
+          <tr>
+            <td>P-003</td>
+            <td>Etiquetas</td>
+            <td>2010</td>
+            <td>2000</td>
+            <td>8000</td>
+            <td>2500</td>
+            <td>5500</td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="operador-inventario.html" class="btn">Ver Todo</a>
+    </div>
+  </div>
+</body>
+</html>

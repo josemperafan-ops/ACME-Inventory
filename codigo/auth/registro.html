@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro - ACME S.A.S.</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <img src="../img/logo.png" alt="Logo ACME" class="login-logo">
+      <h1>Registro de Usuario</h1>
+      <p class="register">¿Ya tienes cuenta? <a href="login.html">Inicia Sesión</a></p>
+      <form action="../administrador/index.html" method="get">
+        <div class="form-group">
+          <label for="nombre">Nombre Completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo Electrónico</label>
+          <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Clave</label>
+          <input type="password" id="password" name="password" placeholder="********" required>
+        </div>
+
+        <div class="form-group">
+          <label for="fecha">Fecha de Nacimiento</label>
+          <input type="date" id="fecha" name="fecha" required>
+        </div>
+
+        <div class="form-group">
+          <label for="perfil">Perfil</label>
+          <select id="perfil" name="perfil" required>
+            <option value="">Seleccione...</option>
+            <option value="admin">Administrador</option>
+            <option value="operador">Operador</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn">Registrarse</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
+
