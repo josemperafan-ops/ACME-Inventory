@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar Entrada - Administrador</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>ACME S.A.S.</h2>
+      <img src="../img/logo.png" alt="Logo ACME" class="logo-sidebar">
+      <nav>
+        <ul>
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="inventario.html">Inventario</a></li>
+          <li><a href="ordenes.html">Órdenes</a></li>
+          <li><a href="contactos.html">Contactos</a></li>
+          <li><a href="reportes.html">Reportes</a></li>
+          <li><a href="entradas.html">Entradas</a></li>
+          <li><a href="salidas.html">Salidas</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main content -->
+    <div class="main">
+      <h1>Registrar Entrada de Producto</h1>
+
+      <!-- Formulario de entrada -->
+      <form action="inventario.html" method="post">
+        <label for="codigo">Código del Producto</label>
+        <input type="text" id="codigo" name="codigo" placeholder="Ej: P-001" required>
+
+        <label for="nombre">Nombre del Producto</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="cantidad">Cantidad Entrada</label>
+        <input type="number" id="cantidad" name="cantidad" required>
+
+        <label for="valor">Valor Unitario</label>
+        <input type="number" id="valor" name="valor" required>
+
+        <label for="fecha">Fecha de Entrada</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <label for="proveedor">Proveedor</label>
+        <input type="text" id="proveedor" name="proveedor" required>
+
+        <!-- Botones -->
+        <button type="submit">Registrar Entrada</button>
+        <a href="inventario.html" class="btn">Cancelar</a>
+      </form>
+
+      <!-- Tabla de entradas recientes -->
+      <h2>Entradas Recientes</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Valor Unitario</th>
+            <th>Proveedor</th>
+            <th>Fecha</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>P-001</td>
+            <td>Cajas de cartón</td>
+            <td>50</td>
+            <td>$1000</td>
+            <td>Constructora ABC</td>
+            <td>15/02/2026</td>
+          </tr>
+          <tr>
+            <td>P-002</td>
+            <td>Botella de vino</td>
+            <td>100</td>
+            <td>$2000</td>
+            <td>Bodega Central</td>
+            <td>16/02/2026</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
