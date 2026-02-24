@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contactos - Administrador</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>ACME S.A.S.</h2>
+      <img src="../img/logo.png" alt="Logo ACME" class="logo-sidebar">
+      <nav>
+        <ul>
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="inventario.html">Inventario</a></li>
+          <li><a href="ordenes.html">Órdenes</a></li>
+          <li><a href="contactos.html">Contactos</a></li>
+          <li><a href="reportes.html">Reportes</a></li>
+          <li><a href="entradas.html">Entradas</a></li>
+          <li><a href="salidas.html">Salidas</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main content -->
+    <div class="main">
+      <h1>Directorio de Contactos</h1>
+
+      <!-- Botón agregar contacto -->
+      <a href="registro-contacto.html" class="btn">Agregar Nuevo Contacto</a>
+
+      <!-- Directorio de Clientes -->
+      <h2>Directorio de Clientes</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>ID / NIT</th>
+            <th>Dirección</th>
+            <th>Teléfono</th>
+            <th>Email</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>María Rodríguez</td>
+            <td>900.123.456</td>
+            <td>Cra 45 #20-1D</td>
+            <td>300 123 4567</td>
+            <td>maria@gmail.com</td>
+            <td>
+              <a href="registro-contacto.html" class="btn">Editar</a>
+              <a href="#" class="btn">Eliminar</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Constructora ABC</td>
+            <td>800.987.654</td>
+            <td>Av. Centenario #5</td>
+            <td>601 234 5678</td>
+            <td>contacto@abc.com</td>
+            <td>
+              <a href="registro-contacto.html" class="btn">Editar</a>
+              <a href="#" class="btn">Eliminar</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Directorio de Proveedores -->
+      <h2>Directorio de Proveedores</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>ID / NIT</th>
+            <th>Dirección</th>
+            <th>Teléfono</th>
+            <th>Email</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Taller Mecánico</td>
+            <td>102.304.506</td>
+            <td>Calle 100 #12</td>
+            <td>315 987 6543</td>
+            <td>taller@mail.com</td>
+            <td>
+              <a href="registro-contacto.html" class="btn">Editar</a>
+              <a href="#" class="btn">Eliminar</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
