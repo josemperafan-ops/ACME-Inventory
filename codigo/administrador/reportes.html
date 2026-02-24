@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reportes - Administrador</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>ACME S.A.S.</h2>
+      <img src="../img/logo.png" alt="Logo ACME" class="logo-sidebar">
+      <nav>
+        <ul>
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="inventario.html">Inventario</a></li>
+          <li><a href="ordenes.html">Órdenes</a></li>
+          <li><a href="contactos.html">Contactos</a></li>
+          <li><a href="reportes.html">Reportes</a></li>
+          <li><a href="entradas.html">Entradas</a></li>
+          <li><a href="salidas.html">Salidas</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main content -->
+    <div class="main">
+      <h1>Reportes del Sistema</h1>
+
+      <!-- Opciones de reportes -->
+      <h2>Generar Reporte</h2>
+      <form action="reportes.html" method="post">
+        <label for="tipo">Tipo de Reporte</label>
+        <select id="tipo" name="tipo" required>
+          <option value="">Seleccione...</option>
+          <option value="inventario">Inventario</option>
+          <option value="ordenes">Órdenes</option>
+          <option value="contactos">Contactos</option>
+          <option value="entradas">Entradas</option>
+          <option value="salidas">Salidas</option>
+        </select>
+
+        <label for="fechaInicio">Fecha Inicio</label>
+        <input type="date" id="fechaInicio" name="fechaInicio" required>
+
+        <label for="fechaFin">Fecha Fin</label>
+        <input type="date" id="fechaFin" name="fechaFin" required>
+
+        <button type="submit">Generar Reporte</button>
+      </form>
+
+      <!-- Tabla de ejemplo de reporte -->
+      <h2>Reporte de Inventario</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Producto</th>
+            <th>Stock Actual</th>
+            <th>Entradas</th>
+            <th>Salidas</th>
+            <th>Consumo Promedio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>P-001</td>
+            <td>Cajas de cartón</td>
+            <td>120</td>
+            <td>50</td>
+            <td>30</td>
+            <td>60</td>
+          </tr>
+          <tr>
+            <td>P-002</td>
+            <td>Botella de vino</td>
+            <td>153</td>
+            <td>100</td>
+            <td>47</td>
+            <td>80</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Botones de exportación -->
+      <div class="actions">
+        <button type="button">Exportar PDF</button>
+        <button type="button">Exportar Excel</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
