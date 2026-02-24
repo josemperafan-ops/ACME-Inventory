@@ -1,15 +1,11 @@
-/* ===== Reset básico ===== */
-/* Elimina márgenes y paddings por defecto, aplica box-sizing y tipografía global */
+/* vaciar */
+/* Elimina márgenes y paddings por defecto*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', Arial, sans-serif;
 }
-
-/* ========================================================= */
-/* ===== Dashboard (Sidebar, Main, Tarjetas, Botones, Tablas) ===== */
-/* ========================================================= */
 
 /* Contenedor principal que organiza sidebar y contenido */
 .container {
@@ -152,9 +148,6 @@ table input {
   border-radius: 4px;
 }
 
-/* ========================================================= */
-/* ===== Login y Registro (Auth) ===== */
-/* ========================================================= */
 
 /* Contenedor en fila: logo a la izquierda, formulario a la derecha */
 .auth-row {
@@ -271,11 +264,9 @@ table input {
   text-decoration: underline;
 }
 
-/* ========================================================= */
-/* ===== Responsividad ===== */
-/* ========================================================= */
 
-/* 📱 Celulares */
+/* Responsividad */
+/*  Celulares */
 @media (max-width: 600px) {
   /* Dashboard */
   .container {
@@ -315,7 +306,7 @@ table input {
   }
 }
 
-/* 📲 Tablets */
+/*  Tablets */
 @media (min-width: 601px) and (max-width: 1024px) {
   /* Dashboard */
   .sidebar {
