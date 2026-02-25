@@ -10,6 +10,8 @@
   <div class="container">
     <!-- Sidebar -->
     <div class="sidebar">
+      <!-- Logo arriba -->
+      <img src="../img/logo.png" alt="Logo ACME" class="logo-sidebar">
       <h2>ACME S.A.S.</h2>
       <nav>
         <ul>
@@ -25,18 +27,34 @@
     <div class="main">
       <h1>Dashboard Operador</h1>
 
-      <!-- Tarjetas de resumen -->
-      <div class="cards">
-        <div class="card">Total Productos: 120</div>
-        <div class="card">Clientes Registrados: 35</div>
-        <div class="card">Proveedores Activos: 12</div>
-        <div class="card">Categorías: 8</div>
-      </div>
+      <!-- Tarjetas de resumen con íconos -->
+<div class="cards">
+  <div class="card">
+    <img src="../img/productos-icon.png" alt="Productos" class="icon-card">
+    <p>Total Productos: 120</p>
+  </div>
+  <div class="card">
+    <img src="../img/clientes-icon.png" alt="Clientes" class="icon-card">
+    <p>Clientes Registrados: 35</p>
+  </div>
+  <div class="card">
+    <img src="../img/proveedores-icon.png" alt="Proveedores" class="icon-card">
+    <p>Proveedores Activos: 12</p>
+  </div>
+  <div class="card">
+    <img src="../img/categoriass-icon.png" alt="Categorías" class="icon-card">
+    <p>Categorías: 8</p>
+  </div>
+</div>
 
-      <!-- Acciones rápidas -->
+      <!-- Acciones rápidas con íconos -->
       <div class="actions">
-        <a href="operador-orden-form.html" class="btn">Nueva Cotización</a>
-        <a href="operador-orden-form.html" class="btn">Nueva Orden</a>
+        <a href="operador-orden-form.html" class="btn">
+          <img src="../img/nueva-cotizacion.png" alt="Cotización" class="icon-btn"> Nueva Cotización
+        </a>
+        <a href="operador-orden-form.html" class="btn">
+          <img src="../img/nueva-orden.png" alt="Orden" class="icon-btn"> Nueva Orden
+        </a>
       </div>
 
       <!-- Tabla de alertas -->
@@ -83,8 +101,10 @@
           </tr>
         </tbody>
       </table>
-      <a href="operador-inventario.html" class="btn">Ver Todo</a>
+           <a href="operador-inventario.html" class="btn">Ver Todo</a>
+      </a>
     </div>
   </div>
 </body>
 </html>
+
