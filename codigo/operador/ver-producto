@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ver Producto - Vista Operador</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+       <img src="../img/logo.png" alt="Logo ACME" class="logo-sidebar">
+      <h2>ACME S.A.S.</h2>
+      <nav>
+        <ul>
+          <li><a href="operador-dashboard.html">Dashboard</a></li>
+          <li><a href="operador-inventario.html">Inventario</a></li>
+          <li><a href="operador-orden-form.html">Órdenes / Cotizaciones</a></li>
+          <li><a href="operador-contactos.html">Contactos</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main content -->
+    <div class="main">
+      <h1>Detalle del Producto</h1>
+
+      <div class="product-detail">
+
+        <!-- Información del producto -->
+        <div class="product-info">
+          <h2>Código: P-001</h2>
+          <p><strong>Nombre:</strong> Cajas de cartón</p>
+
+          <div class="section">
+            <h3>Clasificación</h3>
+            <ul>
+              <li><strong>Categoría:</strong> Empaque</li>
+              <li><strong>Unidad:</strong> Unidad</li>
+              <li><strong>Presentación:</strong> Caja</li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <h3>Logística</h3>
+            <ul>
+              <li><strong>Ubicación:</strong> Bodega</li>
+              <li><strong>Cantidad inicial:</strong> 120</li>
+              <li><strong>Cantidad mínima:</strong> 80</li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <h3>Financiero</h3>
+            <ul>
+              <li><strong>Precio de Entrada:</strong> $1000</li>
+              <li><strong>Precio de Salida:</strong> $1500</li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <h3>Detalle</h3>
+            <p>Producto utilizado para embalaje de mercancía frágil.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botón volver -->
+      <a href="operador-inventario.html" class="btn">Volver al Inventario</a>
+    </div>
+  </div>
+</body>
+</html>
