@@ -24,6 +24,11 @@
 
     <!-- Main content -->
     <div class="main">
+ <!-- Buscador superior -->
+        <div class="search-bar">
+        <input type="text" placeholder="Buscar...">
+        </div>
+
       <h1>Buscar Producto</h1>
 
       <!-- Formulario de búsqueda -->
