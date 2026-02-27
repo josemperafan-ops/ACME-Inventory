@@ -391,3 +391,18 @@ table input {
   font-size: 14px;
 }
 
+/* Estilo general para los buscadores, */
+/*Selecciona cajas de texto que digan “Buscar” en el placeholder para poder darles un estilo específico.*/
+input[type="text"][placeholder*="Buscar"] {
+  width: 280px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
